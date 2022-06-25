@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="icon" href="imgs/movie-folder-icon-16.jpg" type="image/icon type">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="loadingScreen">
+
+        <div class="spinner"></div>
+    </div>
+
+
+
+    <div class="sideBarBox position-fixed d-flex align-items-center ">
+
+        <ul class="navBar list-unstyled d-flex flex-column vh-100 ">
+
+            <li class="nav-item nav1">
+                <a class="nav-link nav-category" href="#home">Now playing</a>
+            </li>
+
+            <li class="nav-item nav2">
+                <a class="nav-link nav-category" href="#home">Popular</a>
+            </li>
+
+            <li class="nav-item nav3">
+                <a class="nav-link nav-category" href="#home">Top Rated</a>
+            </li>
+
+            <li class="nav-item nav4">
+                <a class="nav-link nav-category" href="#home">Trending</a>
+            </li>
+
+            <li class="nav-item nav5">
+                <a class="nav-link nav-category" href="#home">Upcoming</a>
+            </li>
+
+            <li class="nav-item nav6">
+                <a class="nav-link nav-category" href="#pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item nav7">
+                <a class="nav-link nav-category" href="#contact">Contact us</a>
+            </li>
+
+
+
+        </ul>
+
+        <div
+            class="nav-icon position-absolute d-flex flex-column align-items-center flex-wrap justify-content-between p-3 vh-100 top-0 start-100">
+            <i class="fa-solid fa-bars "></i>
+
+            <div class="last-icons ">
+                <i class=" fa-solid fa-earth-africa pb-3"></i>
+                <i class=" fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="newest-movies filter" id="home">
+
+
+
+        <div class="container pt-5 w-75">
+            <div class="heading p-0">
+                <h2 class="text-uppercase ">IMDB Movies</h2>
+                <h3>Now Playing</h3>
+            </div>
+            <div class="row justify-content-end">
+
+
+                <div class="filter-box col-md-5 col-sm-6">
+                    <h3>Search</h3>
+                    <input type="text" placeholder="Keywords" id="realSearch">
+                </div>
+
+                <div class="filter-box  col-md-5 col-sm-6">
+                    <h3 id="searchByName">Search by name</h3>
+                    <input type="text" placeholder="Name, Keywords" id="movieSearch">
+                </div>
+
+                <div class="row" id="movie-body"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="pricing" id="pricing">
+
+
+        <div class="container w-75">
+            <div class="heading p-0">
+                <h2 class="text-uppercase">IMDB Movies</h2>
+                <h3>Pricing</h3>
+            </div>
+
+            <div class="pricing-content d-grid gap-4">
+                <div class="box">
+                    <div class="title">Basic</div>
+                    <div class="price">
+                        <span class="amount">120$</span>
+                        <span class="monthly">Monthly price</span>
+                    </div>
+                    <ul>
+                        <li>480p Resolution</li>
+                        <li>Good Video Quality</li>
+                        <li>Watch on your TV, computer,<br> mobile phone and tablet</li>
+
+                    </ul>
+                    <a href="#">Choose Plan</a>
+                </div>
+                <div class="box">
+                    <div class="title">Standard</div>
+                    <div class="price">
+                        <span class="amount">165$</span>
+                        <span class="monthly">Monthly price</span>
+                    </div>
+                    <ul>
+                        <li>1080p Resolution</li>
+                        <li>Better Video Quality</li>
+                        <li>Watch on your TV, computer,<br> mobile phone and tablet</li>
+
+                    </ul>
+                    <a href="#">Choose Plan</a>
+                </div>
+                <div class="box">
+                    <div class="title">Premium</div>
+                    <div class="price">
+                        <span class="amount">200$</span>
+                        <span class="monthly">Monthly price</span>
+                    </div>
+                    <ul>
+                        <li>4K+HDR Resolution</li>
+                        <li>Best Video Quality</li>
+                        <li>Watch on your TV, computer,<br> mobile phone and tablet</li>
+
+
+                    </ul>
+                    <a href="#pricing">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="contact" id="contact">
+        <div class="container w-75">
+            <div class="heading">
+                <h2 class="text-uppercase text-center">Contact us</h2>
+                <h3>Get in touch</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box p-lg-5 ps-2">
+                        <div class="row">
+                            <div class="col-md-6 p-3">
+                                <div class="contact-content pt-4 pt-md-0">
+
+
+                                    <div class="row contact-box">
+                                        <div class="contact-icon text-center pt-1">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+
+                                        <div class="contact-text w-75">
+                                            <h3 class="fs-5 fw-bold">Address</h3>
+                                            <p class=" fs-6">
+                                                New Street 22545, Nexa Road, New York City, USA
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="row contact-box">
+                                        <div class="contact-icon text-center pt-1">
+                                            <i class="fas fa-phone-alt fa-rotate-90"></i>
+                                        </div>
+
+                                        <div class="contact-text w-75">
+                                            <h3 class="fs-5 fw-bold">Phone</h3>
+                                            <p class=" fs-6">
+                                                +1 (415) 876-3250 / +1 (415) 876-3251
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="row contact-box">
+                                        <div class="contact-icon text-center pt-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+
+                                        <div class="contact-text w-75">
+                                            <h3 class="fs-5 fw-bold">Say Hello</h3>
+                                            <p class=" fs-6">
+                                                hello@uigrid.com </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="contact-social my-4 d-flex px-4 align-items-center">
+
+                                        <i class="fa fa-facebook fa-lg"></i>
+                                        <i class="fa fa-twitter fa-lg"></i>
+                                        <i class="fa fa-google-plus fa-lg"></i>
+                                        <i class="fa fa-github fa-lg"></i>
+                                        <i class="fa fa-behance fa-lg"></i>
+                                        <i class="fa fa-dribbble fa-lg"></i>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 p-3 mg-top d-flex flex-wrap justify-content-around">
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                                        <div class="alert alert-danger" id="nameAlert" role="alert">
+                                            Enter a valid name.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group"> <input class="form-control" id="email"
+                                            placeholder="Enter Your Email">
+                                        <div class="alert alert-danger" id="emailAlert" role="alert">
+                                            Enter a valid email.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group"> <input class="form-control" name="phone" id="phone"
+                                            placeholder="Enter Your Phone">
+                                        <div class="alert alert-danger" id="phoneAlert" role="alert">
+                                            Enter a valid phone number.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group"> <input class="form-control" name="age" id="age"
+                                            placeholder="Enter your Age">
+                                        <div class="alert alert-danger" id="ageAlert" role="alert">
+                                            Enter a valid Age
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group"> <input type="password" class="form-control" id="password"
+                                            placeholder="Enter your password">
+                                        <div class="alert alert-danger" id="pwAlert" role="alert">
+                                            Enter a valid password *Minimum eight characters, at least one letter and
+                                            one
+                                            number:*
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group"> <input type="password" class="form-control" id="rePassword"
+                                            placeholder="Re-enter your password">
+                                        <div class="alert alert-danger" id="rePasswordAlert" role="alert">
+                                            The password is not matching
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-11 mb-1">
+                                    <div class="form-group"><textarea class="form-control" name="message" rows="1"
+                                            maxlength="100" placeholder="Message"></textarea></div>
+                                </div>
+
+                                <div class="col-md-6 pt-3 text-white">
+                                    <span id="char">100</span> Character Remaining.
+                                </div>
+                                <div class="col-md-5">
+
+                                    <button type="submit" class="btn btn-primary mt-3 " id="submitBtn"><i
+                                            class="fas fa-paper-plane pe-2"></i>Send Message</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+
+        <div class="container w-75">
+            <p>iMBD Movies</p>
+            <p class="copyright">© 2022 All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/b1c9c7fb83.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
