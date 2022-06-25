@@ -10,7 +10,7 @@
 - Ajax
 
 ## Functionalities:
-
+- Loading Screen Spinner
 - Website is fully responsive in all screens
 - Side navigation bar using jQuery
 - For each click on the navigation bar icons, it updates the movies list. For example choosing Popular movies, the list will be
